@@ -14,8 +14,6 @@ function gridSize(number) {
     };
 };
 
-// sketchContainer.createElement(sketchCell);
-
 //Create a function that calculates and updates the height and width of sketch cells based on number of divs
 
 //Create event listener for Black button and sketch cells that changes color of cells (divs) to black upon mouseover
