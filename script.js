@@ -4,6 +4,7 @@ const sketchContainer = document.querySelector("#sketch-container");
 
 function addElement() {
     const newDiv = document.createElement("div");
+    newDiv.classList.add("sketchCell");
     sketchContainer.appendChild(newDiv)
 };
 
