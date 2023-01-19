@@ -2,7 +2,17 @@
 
 const sketchContainer = document.querySelector("#sketch-container");
 
-const sketchCell = document.sketchContainer.createElement("div");
+function addElement() {
+    const newDiv = document.createElement("div");
+    sketchContainer.appendChild(newDiv)
+};
+
+function gridSize(number) {
+    const numberSquared = number * number;
+    for (let i = 0; i < numberSquared; i++) {
+        addElement();
+    };
+};
 
 // sketchContainer.createElement(sketchCell);
 
