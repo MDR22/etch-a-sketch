@@ -8,3 +8,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+#sketch-container {
+    width: 500px;
+    height: 500px;
+}
