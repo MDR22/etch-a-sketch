@@ -63,13 +63,21 @@ const randomColorButton = document.querySelector("#random-color-button");
 function randomButtonResult() {
     const sketchCells = document.querySelectorAll(".sketchCell");
     sketchCells.forEach(cell => {
-        cell.addEventListener("mouseover", function() {
-            getRandomColor();
+        cell.addEventListener("mouseover", () => {
+            cell.style.backgroundColor = getRandomColor();
         });
     });
 };
 
-randomcColorButton.addEventListener("click", randomButtonResult);
+function getRandomColor() {
+    let color1 = Math.floor(Math.random() * 255);
+    let color2 = Math.floor(Math.random() * 255);
+    let color3 = Math.floor(Math.random() * 255);
+    return `rgb(${color1}, ${color2}, ${color3})`;
+};
+
+
+randomColorButton.addEventListener("click", randomButtonResult);
 
 //Create event listener for reset button to erase the sketch container
 
