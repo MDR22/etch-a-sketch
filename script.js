@@ -81,4 +81,17 @@ randomColorButton.addEventListener("click", randomButtonResult);
 
 //Create event listener for reset button to erase the sketch container
 
+const resetButton = document.querySelector("#reset-button");
+
+function resetButtonResult() {
+    const sketchCells = document.querySelectorAll(".sketchCell");
+    sketchCells.forEach(cell => {
+            cell.style.backgroundColor = "white";
+        });
+    };
+
+resetButton.addEventListener("click", resetButtonResult);
+
+
+
 //Create event listener for Change grid size button that changes grid size based on user selection - slider?
