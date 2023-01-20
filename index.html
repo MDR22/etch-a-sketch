@@ -21,8 +21,9 @@
         <button id="random-color-button">Random Color</button>
         <button id="reset-button">Reset</button>
         <div class="slidecontainer">
-            <h4>Change the grid size</h4>
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <label for="grid-size-slider">Change the grid size</label>
+            <input type="range" value="4" min="2" max="64" oninput="this.nextElementSibling.value = this.value">
+            <output id="default-grid-size">4</output>
         </div>
     </div>
 </div>
