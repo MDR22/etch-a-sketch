@@ -41,6 +41,19 @@ function sketchCellSize(number) {
 
 //Create event listener for Black button and sketch cells that changes color of cells (divs) to black upon mouseover
 
+const blackButton = document.querySelector("#black-button");
+
+function blackButtonResult() {
+    const sketchCells = document.querySelectorAll(".sketchCell");
+    sketchCells.forEach(cell => {
+        cell.addEventListener("mouseover", function() {
+            cell.style.backgroundColor = "black";
+        });
+    });
+};
+
+blackButton.addEventListener("click", blackButtonResult);
+
 //Create event listener for Select-a-color button and  sketch cells that changes color of cells (divs) to color specified by user upon mouseover
 
 //Create event listener for Random color button and sketch cells that changes color of cells (divs) to a random color upon mouseover
