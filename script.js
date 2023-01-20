@@ -30,6 +30,7 @@ function sketchCellSize(number) {
     const sketchCellWidth = (500 / number);
     const sketchCellHeight = (500 / number);
     sketchCells.forEach(cell => {
+        resetButtonResult();
         cell.style.width = `${sketchCellWidth}px`;
         cell.style.height = `${sketchCellHeight}px`;
         cell.style.margin = "-1px"
