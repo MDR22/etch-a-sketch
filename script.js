@@ -1,3 +1,10 @@
+//Add starting grid size on window load
+
+window.onload = function () {
+    gridSize(4);
+    sketchCellSize(4);
+};
+
 //Create function that adds specific number of divs to sketch container with specific class
 
 const sketchContainer = document.querySelector("#sketch-container");
