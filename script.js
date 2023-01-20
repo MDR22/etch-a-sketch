@@ -97,3 +97,13 @@ resetButton.addEventListener("click", resetButtonResult);
 
 
 //Create event listener for Change grid size button that changes grid size based on user selection - slider?
+
+const changeGridButton = document.querySelector("#change-grid-button");
+
+function changeGridSize() {
+    const gridSizeNew = prompt("Please enter a number between 2 and 100 to change grid size");
+    gridSize(gridSizeNew);
+    sketchCellSize(gridSizeNew);
+};
+
+changeGridButton.addEventListener("click", changeGridSize);
