@@ -3,6 +3,7 @@
 window.onload = function () {
     gridSize(4);
     sketchCellSize(4);
+    blackButtonResult();
 };
 
 //Create function that adds specific number of divs to sketch container with specific class
